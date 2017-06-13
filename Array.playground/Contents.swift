@@ -28,8 +28,20 @@ intArrayNumber2.append(111)
 strArrayName2
 strArrayName2.append("Doramon")
 
+//การหาขนาดของ Array
+strArrayName2.count
 
+//นี่คือการเรียกใช้ค่าจาก Array โดยใช้ตัว index
+print("strArrayName2 ที่ index = 3 มีค่า \(strArrayName2[3])")
 
+//การลบสมาชิกของ Array
+strArrayName2
+strArrayName2.remove(at: 1)
+print(strArrayName2)
 
+//การเรียง Array
+var intA = [9,5,7,1,3,10]
+intA.sort()
+print(intA)
 
 
