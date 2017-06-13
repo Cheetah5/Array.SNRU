@@ -13,7 +13,22 @@ class MyClass {
     func myVoidType() -> Void {
         print("นี่คือ เมธอดแบบ Void")
     }
+    
+    //Method Return Type การสร้างเมธอดแบบคืนค่า
+    
+    func myReturnType() -> Int {
+        let intResult = intNumber * 5
+            return intResult
+    }
 
+    //Method Arg & Return
+    func myOfficer(strTitle: String, strDetail: String) -> String {
+        let strOfficer = strTitle + " " + strName + " " + strDetail
+        return strOfficer
+        
+    }
+    
+    
 }   //MyClass
 
 //Inheriate Object การสืบทอด Class
@@ -28,7 +43,10 @@ print("Before ==> \(myClass.strName)")
 myClass.strName = "นิว"
 print("After ==> \(myClass.strName)")
 
-//การเรียกใช้งานเมธอด 
+//การเรียกใช้งานเมธอด
 myClass.myVoidType()
 
+var intMyResult = myClass.myReturnType()
+
+var strMyStudent = myClass.myOfficer(strTitle: "Title", strDetail: "Detail")
 
